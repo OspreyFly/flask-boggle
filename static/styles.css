@@ -1,0 +1,27 @@
+div {
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    font-size: 80px;
+}
+ul {
+    list-style-type: none;
+}
+table {
+    border: 1px solid black;
+    margin: 0 auto;
+    text-align: center;
+    background-color: black;
+}
+table tr td {
+    border: 1px solid black;
+    font-size: 100px;
+    text-align: center;
+    padding: 1px;
+    width: 100px;
+    background-color: white;
+}
+#timer {
+    font-size: 50px;
+}

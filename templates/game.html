@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %} Boggle! {% endblock %}
+
+{% block content %}
+<div>
+    <h1 id="msg-header">Let's Boggle!</h1>
+
+    <table>
+        {% for row in board %}
+        <tr>
+            {% for cell in row %}
+            <td>{{ cell }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    <form id="guess-form" autocomplete="off">
+        <div id="timer">60</div>
+        <label>Your guess: </label>
+        <input type="text" name="guess" placeholder="...">
+        <div id="message"></div>
+    </form>
+    <h2 id="score"></h2>
+    <h2 id="high_score"></h2>
+    <p>You already tried these:</p>
+    <ul id="past-guess">
+
+    </ul>
+</div>
+{% endblock %}
+
+{{board}}
